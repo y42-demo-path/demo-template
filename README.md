@@ -1,22 +1,31 @@
 # Y42 Demo Template
 
-This repository contains the template space for the Space Fuel Shop demo. You can clone the repository to set up a new demo space.
+This repository contains the public template space for the Space Fuel Shop demo. You can clone the repository to set up a new demo space.
 
-## Secrets
+## About the dataset
+As you may have gathered from Y42's name, we're fans of Hitchhiker's Guide to the Galaxy. This demo, therefore, takes you to outer space. We're running an intergalactic space fuel shop that sells everything needed to power your spaceship.
 
-Because the secrets are not included in the Git repo, you must manually configure these to ensure the space can connect to its sources.
+## How to set up
 
-- `Postgres Space Fuel Shop`
+1. Fork this repository.
+2. Follow the general instructions in [Y42's Getting Started Guide](https://docs.y42.dev/docs/getting-started/create-a-space) for `Basic info` and `Connect data warehouse`.
+3. In the configure Git section, select `Use your own GitHub repository`.
+4. Click `Authorize repositories in GitHub` and follow the instructions.
+
+### Secrets
+
+Because the secrets are not included in the Git repo, you must [manually configure these](https://docs.y42.dev/docs/spaces/settings/secrets) to ensure the space can connect to its sources.
+
+- Airbyte/Postgres secret:
+  - **Secret name**: `Postgres Space Fuel Shop`
   - **Host IP:** `35.198.165.208`
   - **Port:** `5432` (default)
   - **Database name:** `y42-demo-data`
   - **User:** `public_reader`
   - **Password:** `dontpanic`
-- Custom secrets:
-  - `exoplanet_user`: dummy secret, enter anything
-  - `exoplanet_pass`: dummy secret, enter anything
-
-## Further documentation
-
-- [Dataset design](https://www.notion.so/y42/Dataset-design-1f04d6f6e4e342ba99297fddca02bc38)
-- [Golden Sales Pitch](https://www.notion.so/y42/Golden-Sales-Pitch-08cf79883ec442feacaa1bbdcddea612)
+- Custom secret 1:
+  - **Secret name:** `exoplanet_user`
+  - **Value:** `loremipsum` (dummy secret)
+- Custom secret 2:
+  - **Secret name:** `exoplanet_pass`
+  - **Value:** `loremipsum` (dummy secret)
