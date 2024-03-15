@@ -1,4 +1,4 @@
-# Y42 Demo Template
+# Y42 Demo Template (BigQuery)
 
 This repository contains the public template space for the Space Fuel Shop demo. You can clone the repository to set up a new demo space.
 
